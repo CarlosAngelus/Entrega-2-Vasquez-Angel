@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulador de Presupuesto</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>💰 Simulador de Presupuesto</h1>
+      <p class="tagline">Registra tus ingresos y gastos para conocer tu balance mensual</p>
+    </header>
+
+    <section class="simulador">
+      <form id="productForm">
+        <input type="text" id="productName" placeholder="Nombre del ingreso/gasto" required>
+        <input type="number" id="productPrice" placeholder="Monto" required>
+        <select id="productType">
+          <option value="ingreso">Ingreso</option>
+          <option value="gasto">Gasto</option>
+        </select>
+        <button type="submit" class="cta-primary">Agregar</button>
+      </form>
+
+      <div id="productList"></div>
+
+      <div id="total">
+        <p id="totalIngresos">💵 Total Ingresos: $0</p>
+        <p id="totalGastos">💸 Total Gastos: $0</p>
+        <p id="balanceFinal">⚖️ Balance Final: $0</p>
+      </div>
+    </section>
+
+    <section class="acciones">
+      <button id="iniciarSimulador" class="cta-primary">Reiniciar Simulador</button>
+    </section>
+
+    <footer>
+      <p>Simulador de presupuesto personal</p>
+    </footer>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

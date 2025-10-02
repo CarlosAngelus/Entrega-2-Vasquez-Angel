@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 { color: #444; }
+
+#productForm {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+#productList div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.item.ingreso { border-left: 5px solid green; }
+.item.gasto { border-left: 5px solid red; }
+
+.remove-btn {
+  margin-left: 10px;
+  background: #ff4444;
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.remove-btn:hover {
+  background: #cc0000;
+}
+
+#total {
+  margin-top: 20px;
+  font-weight: bold;
+}

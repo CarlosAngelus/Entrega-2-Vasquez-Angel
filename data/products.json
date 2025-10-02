@@ -1,0 +1,5 @@
+[
+  { "name": "Sueldo", "price": 1200, "type": "ingreso" },
+  { "name": "Renta", "price": 500, "type": "gasto" },
+  { "name": "Comida", "price": 200, "type": "gasto" }
+]
